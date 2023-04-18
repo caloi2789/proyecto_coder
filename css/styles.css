@@ -42,20 +42,34 @@
 /* ---------------------------------Barra de navegacion header------------------------------- */
 
 
-.divGlass {
+.blur {
     display: flex;
     flex-wrap: wrap;
-    background-color: rgba(255, 255, 255, 0.158); 
+    background-color: rgba(255, 255, 255, 0.158);
     backdrop-filter: blur(3px) saturate(150%);
-    height: 10vh;
+    height: 20vh;
+}
+
+.logo {
+    display: flex;
+    height: 100%;
+    /* width: 25%; */
+    background-color: rgba(137, 43, 226, 0.411);
+}
+
+.logo__img {
+    margin: 0 0 0 5vw;
+    border-radius: 30% 15%;
+    height: 100%;
 }
 
 .divNav {
     height: 100%;
-    width: 70%;
-    /* background-color: #314440; */
-    padding: 10px;
-    text-align: right;
+    /* width: 50%; */
+    background-color: #314440;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
 .listaNav {
@@ -84,10 +98,13 @@
 
 
 .divIconos {
-    /* background-color: coral; */
+    background-color: coral;
     height: 100%;
     text-align: right;
-    width: 30%;
+    /* width: 25%; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
 .iconos {
@@ -98,16 +115,7 @@
 
 /* ------------------------Seccion principal del header------------------------------- */
 
-.logo {
-    height: 25vh;
-    /* background-color: rgba(137, 43, 226, 0.411); */
-}
 
-.logo__img {
-    margin: 0 0 0 5vw;
-    border-radius: 30% 15%;
-    height: 100%;
-}
 
 .titulo {
     color: aliceblue;
