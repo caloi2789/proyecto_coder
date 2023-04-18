@@ -36,6 +36,7 @@
     background-repeat: no-repeat;
     height: 100vh;
     overflow: hidden;
+
 }
 
 /* ---------------------------------Barra de navegacion header------------------------------- */
@@ -45,7 +46,7 @@
     display: flex;
     flex-wrap: wrap;
     /* background-color: rgba(255, 255, 255, 0.158);  */
-    backdrop-filter: blur(3px) saturate(150%); 
+    backdrop-filter: blur(3px) saturate(150%);
     height: 10vh;
 }
 
@@ -126,7 +127,7 @@
     color: aliceblue;
     text-align: center;
     font-size: 3rem;
-        /* background-color: rgba(0, 255, 255, 0.848); */
+    /* background-color: rgba(0, 255, 255, 0.848); */
 }
 
 .sombraTxt2 {
@@ -139,20 +140,20 @@
 /* ----------------------Todo el main comparte el mismo color de fondo--------------- */
 
 
-.mainIndex {
+.main_Index {
     background-color: rgb(196, 241, 197);
 }
 
 
 /* ------------------Secciones del main con el texto a la izq de la pantalla--------------------- */
 
-.section1 {
+.section__Lodge {
     /* display: inline-block; */
     height: 50vh;
     overflow: hidden;
 }
 
-.section1__divTexto {
+.section__Lodge__divTexto {
     display: inline-block;
     width: 50%;
     height: 100%;
@@ -160,7 +161,7 @@
 
 }
 
-.section1__divImg {
+.section__Lodge__divImg {
     /* display: inline-block; */
     width: 50%;
     height: 100%;
@@ -171,7 +172,7 @@
     float: right;
 }
 
-.section1__divImg img {
+.section__Lodge__divImg img {
     height: 100%;
     width: 100%;
     object-fit: contain;
@@ -182,12 +183,12 @@
 /* ------------------Secciones del main con el texto a la derecha de la pantalla--------------------- */
 
 
-.section2 {
+.section__Pesca {
     height: 50vh;
     overflow: hidden;
 }
 
-.section2__divImg {
+.section__Pesca__divImg {
     display: inline-block;
     width: 50%;
     height: 50vh;
@@ -197,13 +198,13 @@
     /* background-position: center; */
 }
 
-.section2__divImg img {
+.section__Pesca__divImg img {
     height: 100%;
     width: 100%;
     object-fit: contain;
 }
 
-.section2__divTexto {
+.section__Pesca__divTexto {
     /* display: inline-block; */
     width: 50%;
     height: 100%;
@@ -212,7 +213,21 @@
     /* Use el float porque no habia forma de que no me quede el div del texto sobre el de abajo */
 }
 
-/* ---------------------Seccion Mapa--------------------------- */
+/* ---------------------section__Ubicacion--------------------------- */
+
+.section__Ubicacion {
+    /* display: inline-block; */
+    height: 50vh;
+    overflow: hidden;
+}
+
+.section__Ubicacion__divTexto {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+
+}
 
 .divMap {
     float: right;
@@ -250,10 +265,10 @@
         0px -3px 0px white;
 }
 
-.bordeVideo{
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);    
+.bordeVideo {
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 /* ---------------------Estilos para los textos del main--------------------------- */
