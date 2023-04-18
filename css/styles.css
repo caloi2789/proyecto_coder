@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+/* El * selecciona todos los elementos del html*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fuente1 {
+    font-family: 'Caveat', cursive;
+}
+
+.fuente2 {
+    font-family: 'Lato', sans-serif;
+}
+
+/* ---------------------------------Imagen de fondo para los header------------------------------------- */
+
+.Header__Img__Index {
+    background-image: url(../assets/img/header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.Header__Img__Pesca {
+    background-image: url(../assets/img/header_pesca.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* ---------------------------------Barra de navegacion header------------------------------- */
+
+
+.divGlass {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: rgba(255, 255, 255, 0.158);  */
+    backdrop-filter: blur(3px) saturate(150%); 
+    height: 10vh;
+}
+
+.divNav {
+    height: 100%;
+    width: 70%;
+    /* background-color: #314440; */
+    padding: 10px;
+    text-align: right;
+}
+
+.listaNav {
+    list-style: none;
+    display: inline-block;
+    border-right: 3px solid aliceblue;
+    padding: 10px;
+}
+
+.li1 {
+    list-style: none;
+    display: inline-block;
+    border-right: 3px solid aliceblue;
+    border-left: 3px solid aliceblue;
+    padding: 10px;
+}
+
+.linkNav {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+
+
+
+.divIconos {
+    /* background-color: coral; */
+    height: 100%;
+    text-align: right;
+    width: 30%;
+}
+
+.iconos {
+    display: inline-block;
+    margin: 1vw;
+    text-decoration: none;
+}
+
+/* ------------------------Seccion principal del header------------------------------- */
+
+.logo {
+    height: 25vh;
+    /* background-color: rgba(137, 43, 226, 0.411); */
+}
+
+.logo__img {
+    margin: 0 0 0 5vw;
+    border-radius: 30% 15%;
+    height: 100%;
+}
+
+.titulo {
+    color: aliceblue;
+    text-align: center;
+    font-size: 10rem;
+    /* background-color: #656c52b9; */
+}
+
+.sombraTxt1 {
+    text-shadow: 3px 0px 0px rgb(10, 10, 10),
+        -3px 0px 0px rgb(10, 10, 10),
+        0px 3px 0px rgb(10, 10, 10),
+        0px -3px 0px rgb(10, 10, 10);
+}
+
+.textoH2 {
+    color: aliceblue;
+    text-align: center;
+    font-size: 3rem;
+        /* background-color: rgba(0, 255, 255, 0.848); */
+}
+
+.sombraTxt2 {
+    text-shadow: 1px 0px 0px rgb(10, 10, 10),
+        -1px 0px 0px rgb(10, 10, 10),
+        0px 1px 0px rgb(10, 10, 10),
+        0px -1px 0px rgb(10, 10, 10);
+}
+
+/* ----------------------Todo el main comparte el mismo color de fondo--------------- */
+
+
+.mainIndex {
+    background-color: rgb(196, 241, 197);
+}
+
+
+/* ------------------Secciones del main con el texto a la izq de la pantalla--------------------- */
+
+.section1 {
+    /* display: inline-block; */
+    height: 50vh;
+    overflow: hidden;
+}
+
+.section1__divTexto {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+
+}
+
+.section1__divImg {
+    /* display: inline-block; */
+    width: 50%;
+    height: 100%;
+    /* background-image: url(../assets/img/dormitorio.jpg); */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    float: right;
+}
+
+.section1__divImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+
+/* ------------------Secciones del main con el texto a la derecha de la pantalla--------------------- */
+
+
+.section2 {
+    height: 50vh;
+    overflow: hidden;
+}
+
+.section2__divImg {
+    display: inline-block;
+    width: 50%;
+    height: 50vh;
+    /* background-image: url(../assets/img/pesca.jpg); */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+}
+
+.section2__divImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.section2__divTexto {
+    /* display: inline-block; */
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    float: right;
+    /* Use el float porque no habia forma de que no me quede el div del texto sobre el de abajo */
+}
+
+/* ---------------------Seccion Mapa--------------------------- */
+
+.divMap {
+    float: right;
+    height: 100%;
+    width: 50%;
+    padding: 25px;
+}
+
+.divMap__borde {
+    box-shadow: 0px 0px 28px 12px rgba(0, 0, 0, 0.86);
+    -webkit-box-shadow: 0px 0px 28px 12px rgba(0, 0, 0, 0.86);
+    -moz-box-shadow: 0px 0px 28px 12px rgba(0, 0, 0, 0.86);
+    height: 100%;
+    width: 100%;
+
+
+}
+
+/* ---------------------Seccion Video--------------------------- */
+
+.MainVideo {
+    margin: 0 auto;
+    text-align: center;
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+    height: 50vh;
+    overflow: hidden;
+}
+
+.textoVid {
+    font-size: 2rem;
+    text-shadow: 3px 0px 0px white,
+        -3px 0px 0px white,
+        0px 3px 0px white,
+        0px -3px 0px white;
+}
+
+.bordeVideo{
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);    
+}
+
+/* ---------------------Estilos para los textos del main--------------------------- */
+
+
+.textoh3 {
+    color: black;
+    text-decoration: none;
+    font-size: 3.5rem;
+    text-shadow: 3px 0px 0px white,
+        -3px 0px 0px white,
+        0px 3px 0px white,
+        0px -3px 0px white;
+}
+
+.txtMain {
+    display: inline-block;
+    text-align: center;
+    margin: 1%;
+    font-size: 2rem;
+    width: 75%;
+}
+
+/* ----------------------------- Footer-------------------------------------- */
+
+.divFooter {
+    color: aliceblue;
+    font-family: 'Lato', sans-serif;
+    height: 33vh;
+    /* background-color: rgb(6, 65, 6); */
+    background-image: linear-gradient(to right top, #232022, #3a2f31, #513f3b, #635344, #6e6a50, #656c52, #5b6e57, #516f5e, #3f5950, #314440, #24302f, #191d1d);
+    position: relative;
+}
+
+
+.logoFooter {
+    display: inline-block;
+    border-right: 3px solid white;
+    width: 33vw;
+    height: 100%;
+}
+
+.txtFooter {
+    display: inline-block;
+    border-right: 3px solid white;
+    width: 33vw;
+    height: 100%;
+    /* text-align: center; */
+    padding: 7vh 0 0 2%;
+    position: absolute;
+}
+
+.divIconosFooter {
+    margin-left: 18vw;
+    float: right;
+    /* Use float porque no habia forma de que no me quede el div de la <ul> debajo del efecto blur */
+    height: 100%;
+}
+
+/* --------------------------Icono de WhatsApp fijado ------------------------------------ */
+
+
+.fixedWsp {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+    /*para que este por encima de todo*/
+    display: inline-block;
+    /* convertir a bloque y establecer altura/ancho iguales */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    /* hacer que tenga bordes redondeados */
+    text-align: center;
+    /* centrar el contenido dentro del círculo */
+    line-height: 20px;
+    /* ajustar el espacio dentro del círculo */
+    font-size: 3.5rem;
+}
+
+.fa-whatsapp {
+    color: rgb(0, 5, 10);
+}
