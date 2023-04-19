@@ -144,30 +144,27 @@
     text-decoration: none;
 }
 
-/* ------------------------Seccion principal del header------------------------------- */
+/* ------------------------Seccion titulo del header------------------------------- */
 
-.sectionTxtHeader{
+.section__titulo_header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     height: 85vh;
 }
 
-.divTxtHeader{
-    /* background-color: rgba(137, 43, 226, 0.925); */
+.div__titulo_header{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-.titulo {
+    
+.estiloh1__header {
+    font-size: 8rem;
     color: aliceblue;
     text-align: center;
-    font-size: 7.5rem;
-}
-
-.sombraTxt1 {
     text-shadow: 3px 0px 0px rgb(10, 10, 10),
         -3px 0px 0px rgb(10, 10, 10),
         0px 3px 0px rgb(10, 10, 10),
