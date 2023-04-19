@@ -11,11 +11,12 @@
 }
 
 .fuente1 {
-    font-family: 'Caveat', cursive;
+    font-family: 'Lato', sans-serif;
 }
 
+
 .fuente2 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Caveat', cursive; 
 }
 
 /* ---------------------------------Imagen de fondo para los header------------------------------------- */
@@ -40,28 +41,58 @@
 }
 
 /* ---------------------------------Barra de navegacion header------------------------------- */
+.navbar-brand{
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-left: 5vw !important;
+}
 
+.img_Logo {
+    border-radius: 35% 15%;
+    height: 17vh !important;
+}
+
+.nav_Ul_Link_1{
+    color: aliceblue !important; 
+    font-size: 1.4rem;
+    border-left: 2px solid aliceblue;
+    border-right: 2px solid aliceblue;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .nav_Ul_Link{
+    color: aliceblue !important; 
+    font-size: 1.4rem;
+    border-right: 2px solid aliceblue;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .lista_SinBorde li a{
+      border: none;
+    }
+  }
+
+  .navbar-social a {
+    color: white;
+    margin-right: 30px;
+  }
+  
+  .navbar-toggler-color {
+    border-color: aliceblue !important;
+    border: 3px solid aliceblue!important ;
+  }
 
 .blur {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgba(255, 255, 255, 0.158);
+    background-color: #776f796e;
     backdrop-filter: blur(3px) saturate(150%);
-    height: 20vh;
-}
+ }
 
-.logo {
-    display: flex;
-    height: 100%;
-    /* width: 25%; */
-    background-color: rgba(137, 43, 226, 0.411);
-}
 
-.logo__img {
-    margin: 0 0 0 5vw;
-    border-radius: 30% 15%;
-    height: 100%;
-}
+
+
 
 .divNav {
     height: 100%;
@@ -115,13 +146,25 @@
 
 /* ------------------------Seccion principal del header------------------------------- */
 
+.sectionTxtHeader{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 85vh;
+}
 
+.divTxtHeader{
+    /* background-color: rgba(137, 43, 226, 0.925); */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 
 .titulo {
     color: aliceblue;
     text-align: center;
-    font-size: 10rem;
-    /* background-color: #656c52b9; */
+    font-size: 7.5rem;
 }
 
 .sombraTxt1 {
@@ -131,11 +174,10 @@
         0px -3px 0px rgb(10, 10, 10);
 }
 
-.textoH2 {
+.textoHeader {
     color: aliceblue;
     text-align: center;
     font-size: 3rem;
-    /* background-color: rgba(0, 255, 255, 0.848); */
 }
 
 .sombraTxt2 {
@@ -154,6 +196,13 @@
 
 
 /* ------------------Secciones del main con el texto a la izq de la pantalla--------------------- */
+.image-wrapper img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .text-wrapper {
+    padding: 2rem;
+  }
 
 .section__Lodge {
     /* display: inline-block; */
