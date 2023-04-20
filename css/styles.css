@@ -16,7 +16,14 @@
 
 
 .fuente2 {
-    font-family: 'Caveat', cursive; 
+    font-family: 'Caveat', cursive;
+}
+
+.sombraWhite {
+    text-shadow: 3px 0px 0px white,
+        -3px 0px 0px white,
+        0px 3px 0px white,
+        0px -3px 0px white;
 }
 
 /* ---------------------------------Imagen de fondo para los header------------------------------------- */
@@ -41,7 +48,7 @@
 }
 
 /* ---------------------------------Barra de navegacion header------------------------------- */
-.navbar-brand{
+.navbar-brand {
     padding: 0 !important;
     margin: 0 !important;
     margin-left: 5vw !important;
@@ -52,43 +59,43 @@
     height: 17vh !important;
 }
 
-.nav_Ul_Link_1{
-    color: aliceblue !important; 
+.nav_Ul_Link_1 {
+    color: aliceblue !important;
     font-size: 1.4rem;
     border-left: 2px solid aliceblue;
     border-right: 2px solid aliceblue;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-  }
-  
-  .nav_Ul_Link{
-    color: aliceblue !important; 
+}
+
+.nav_Ul_Link {
+    color: aliceblue !important;
     font-size: 1.4rem;
     border-right: 2px solid aliceblue;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-  }
+}
 
-  @media (max-width: 768px) {
-    .lista_SinBorde li a{
-      border: none;
+@media (max-width: 768px) {
+    .lista_SinBorde li a {
+        border: none;
     }
-  }
+}
 
-  .navbar-social a {
+.navbar-social a {
     color: white;
     margin-right: 30px;
-  }
-  
-  .navbar-toggler-color {
+}
+
+.navbar-toggler-color {
     border-color: aliceblue !important;
-    border: 3px solid aliceblue!important ;
-  }
+    border: 3px solid aliceblue !important;
+}
 
 .blur {
     background-color: #776f796e;
     backdrop-filter: blur(3px) saturate(150%);
- }
+}
 
 
 
@@ -146,22 +153,22 @@
 
 /* ------------------------Seccion titulo del header------------------------------- */
 
-.section__titulo_header{
+.section__titulo_header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     height: 85vh;
 }
 
-.div__titulo_header{
+.div__titulo_header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-    
-.estiloh1__header {
+
+.estilo_h1_header {
     font-size: 8rem;
     color: aliceblue;
     text-align: center;
@@ -171,18 +178,17 @@
         0px -3px 0px rgb(10, 10, 10);
 }
 
-.textoHeader {
+.estilo_p_header {
     color: aliceblue;
     text-align: center;
     font-size: 3rem;
-}
-
-.sombraTxt2 {
     text-shadow: 1px 0px 0px rgb(10, 10, 10),
         -1px 0px 0px rgb(10, 10, 10),
         0px 1px 0px rgb(10, 10, 10),
         0px -1px 0px rgb(10, 10, 10);
 }
+
+
 
 /* ----------------------Todo el main comparte el mismo color de fondo--------------- */
 
@@ -193,78 +199,10 @@
 
 
 /* ------------------Secciones del main con el texto a la izq de la pantalla--------------------- */
-.image-wrapper img {
+
+.div_imagen img {
     width: 100%;
     object-fit: cover;
-  }
-  .text-wrapper {
-    padding: 2rem;
-  }
-
-.section__Lodge {
-    /* display: inline-block; */
-    height: 50vh;
-    overflow: hidden;
-}
-
-.section__Lodge__divTexto {
-    display: inline-block;
-    width: 50%;
-    height: 100%;
-    text-align: center;
-
-}
-
-.section__Lodge__divImg {
-    /* display: inline-block; */
-    width: 50%;
-    height: 100%;
-    /* background-image: url(../assets/img/dormitorio.jpg); */
-    /* background-size: contain; */
-    /* background-repeat: no-repeat; */
-    /* background-position: center; */
-    float: right;
-}
-
-.section__Lodge__divImg img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-}
-
-
-
-/* ------------------Secciones del main con el texto a la derecha de la pantalla--------------------- */
-
-
-.section__Pesca {
-    height: 50vh;
-    overflow: hidden;
-}
-
-.section__Pesca__divImg {
-    display: inline-block;
-    width: 50%;
-    height: 50vh;
-    /* background-image: url(../assets/img/pesca.jpg); */
-    /* background-size: contain; */
-    /* background-repeat: no-repeat; */
-    /* background-position: center; */
-}
-
-.section__Pesca__divImg img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-}
-
-.section__Pesca__divTexto {
-    /* display: inline-block; */
-    width: 50%;
-    height: 100%;
-    text-align: center;
-    float: right;
-    /* Use el float porque no habia forma de que no me quede el div del texto sobre el de abajo */
 }
 
 /* ---------------------section__Ubicacion--------------------------- */
