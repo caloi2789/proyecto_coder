@@ -76,7 +76,7 @@
     padding-right: 1.5rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .lista_SinBorde li a {
         border: none;
     }
@@ -288,11 +288,7 @@
 
 .divFooter {
     color: aliceblue;
-    font-family: 'Lato', sans-serif;
-    height: 33vh;
-    /* background-color: rgb(6, 65, 6); */
     background-image: linear-gradient(to right top, #232022, #3a2f31, #513f3b, #635344, #6e6a50, #656c52, #5b6e57, #516f5e, #3f5950, #314440, #24302f, #191d1d);
-    position: relative;
 }
 
 
