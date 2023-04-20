@@ -44,9 +44,16 @@
     background-repeat: no-repeat;
     height: 100vh;
     overflow: hidden;
-
 }
 
+.Header__Img__Contacto{
+    background-image: url(../assets/img/header_3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
 /* ---------------------------------Barra de navegacion header------------------------------- */
 .navbar-brand {
     padding: 0 !important;
@@ -84,7 +91,6 @@
 
 .navbar-social a {
     color: white;
-    margin-right: 30px;
 }
 
 .navbar-toggler-color {
