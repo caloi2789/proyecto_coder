@@ -81,11 +81,11 @@
     padding-right: 1.5rem;
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 991px) {
     .lista_SinBorde li a {
         border: none;
     }
-}
+} */
 
 .navbar-social a {
     color: white;
@@ -101,6 +101,59 @@
     backdrop-filter: blur(3px) saturate(150%);
 }
 
+
+
+
+
+.divNav {
+    height: 100%;
+    /* width: 50%; */
+    background-color: #314440;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.listaNav {
+    list-style: none;
+    display: inline-block;
+    border-right: 3px solid aliceblue;
+    padding: 10px;
+}
+
+.li1 {
+    list-style: none;
+    display: inline-block;
+    border-right: 3px solid aliceblue;
+    border-left: 3px solid aliceblue;
+    padding: 10px;
+}
+
+.linkNav {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+
+
+
+.divIconos {
+    background-color: coral;
+    height: 100%;
+    text-align: right;
+    /* width: 25%; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.iconos {
+    display: inline-block;
+    margin: 1vw;
+    text-decoration: none;
+}
 
 /* ------------------------Seccion titulo del header------------------------------- */
 
@@ -139,7 +192,13 @@
         0px -1px 0px rgb(10, 10, 10);
 }
 
-/* ---------------------section__Ubicacion--------------------------- */
+
+/* ------------------Secciones del main --------------------- */
+
+.div_imagen img {
+    width: 100%;
+    object-fit: cover;
+}
 
 .section__Ubicacion {
     /* display: inline-block; */
@@ -180,26 +239,8 @@
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-/* ---------------------Estilos para los textos del main--------------------------- */
 
 
-.textoh3 {
-    color: black;
-    text-decoration: none;
-    font-size: 3.5rem;
-    text-shadow: 3px 0px 0px white,
-        -3px 0px 0px white,
-        0px 3px 0px white,
-        0px -3px 0px white;
-}
-
-.txtMain {
-    display: inline-block;
-    text-align: center;
-    margin: 1%;
-    font-size: 2rem;
-    width: 75%;
-}
 
 /* ----------------------------- Footer-------------------------------------- */
 
@@ -216,6 +257,22 @@
     height: 100%;
 }
 
+.txtFooter {
+    display: inline-block;
+    border-right: 3px solid white;
+    width: 33vw;
+    height: 100%;
+    /* text-align: center; */
+    padding: 7vh 0 0 2%;
+    position: absolute;
+}
+
+.divIconosFooter {
+    margin-left: 18vw;
+    float: right;
+    /* Use float porque no habia forma de que no me quede el div de la <ul> debajo del efecto blur */
+    height: 100%;
+}
 
 /* --------------------------Icono de WhatsApp fijado ------------------------------------ */
 
