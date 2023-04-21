@@ -42,7 +42,7 @@
     overflow: hidden;
 }
 
-.Header__Img__Contacto{
+.Header__Img__Contacto {
     background-image: url(../assets/img/header_3.jpg);
     background-size: cover;
     background-position: center;
@@ -50,8 +50,10 @@
     height: 100vh;
     overflow: hidden;
 }
+
 /* ---------------------------------Barra de navegacion header------------------------------- */
-.navbar-brand {
+
+.navbar__brand {
     padding: 0 !important;
     margin: 0 !important;
     margin-left: 5vw !important;
@@ -79,7 +81,7 @@
     padding-right: 1.5rem;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
     .lista_SinBorde li a {
         border: none;
     }
@@ -99,59 +101,6 @@
     backdrop-filter: blur(3px) saturate(150%);
 }
 
-
-
-
-
-.divNav {
-    height: 100%;
-    /* width: 50%; */
-    background-color: #314440;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-}
-
-.listaNav {
-    list-style: none;
-    display: inline-block;
-    border-right: 3px solid aliceblue;
-    padding: 10px;
-}
-
-.li1 {
-    list-style: none;
-    display: inline-block;
-    border-right: 3px solid aliceblue;
-    border-left: 3px solid aliceblue;
-    padding: 10px;
-}
-
-.linkNav {
-    color: aliceblue;
-    text-decoration: none;
-    font-size: 1.3em;
-    font-weight: 700;
-}
-
-
-
-
-.divIconos {
-    background-color: coral;
-    height: 100%;
-    text-align: right;
-    /* width: 25%; */
-    display: flex;
-    justify-content: end;
-    align-items: center;
-}
-
-.iconos {
-    display: inline-block;
-    margin: 1vw;
-    text-decoration: none;
-}
 
 /* ------------------------Seccion titulo del header------------------------------- */
 
@@ -190,23 +139,6 @@
         0px -1px 0px rgb(10, 10, 10);
 }
 
-
-
-/* ----------------------Todo el main comparte el mismo color de fondo--------------- */
-
-
-/* .main_Index {
-    background-color: rgb(196, 241, 197);
-} */
-
-
-/* ------------------Secciones del main con el texto a la izq de la pantalla--------------------- */
-
-.div_imagen img {
-    width: 100%;
-    object-fit: cover;
-}
-
 /* ---------------------section__Ubicacion--------------------------- */
 
 .section__Ubicacion {
@@ -241,23 +173,6 @@
 }
 
 /* ---------------------Seccion Video--------------------------- */
-
-.MainVideo {
-    margin: 0 auto;
-    text-align: center;
-    /* padding-top: 50px;
-    padding-bottom: 50px; */
-    height: 50vh;
-    overflow: hidden;
-}
-
-.textoVid {
-    font-size: 2rem;
-    text-shadow: 3px 0px 0px white,
-        -3px 0px 0px white,
-        0px 3px 0px white,
-        0px -3px 0px white;
-}
 
 .bordeVideo {
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -301,22 +216,6 @@
     height: 100%;
 }
 
-.txtFooter {
-    display: inline-block;
-    border-right: 3px solid white;
-    width: 33vw;
-    height: 100%;
-    /* text-align: center; */
-    padding: 7vh 0 0 2%;
-    position: absolute;
-}
-
-.divIconosFooter {
-    margin-left: 18vw;
-    float: right;
-    /* Use float porque no habia forma de que no me quede el div de la <ul> debajo del efecto blur */
-    height: 100%;
-}
 
 /* --------------------------Icono de WhatsApp fijado ------------------------------------ */
 
