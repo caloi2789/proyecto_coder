@@ -15,11 +15,11 @@
     font-family: 'Caveat';
 }
 
-.sombra__White {
-    text-shadow: 3px 0px 0px white,
-        -3px 0px 0px white,
-        0px 3px 0px white,
-        0px -3px 0px white;
+.sombra_White {
+    text-shadow: 1px 0px 0px white,
+        -1px 0px 0px white,
+        0px 1px 0px white,
+        0px -1px 0px white;
 }
 
 /* ---------------------------------Imagen de fondo para los header------------------------------------- */
@@ -34,7 +34,7 @@
 }
 
 .Header__Img__Lodge {
-    background:radial-gradient(circle,rgba(29, 129, 70, 0.885),rgb(0, 0, 0,0.5)), url("../assets/img/header.jpg");
+    background-image: url(../assets/img/Img_Lodge1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -45,6 +45,15 @@
 
 .Header__Img__Pesca {
     background-image: url(../assets/img/header_pesca.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.Header__Img__Ubicacion {
+    background-image: url(../assets/img/header_ubicacion.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -197,4 +206,16 @@
 
 .fa-whatsapp {
     color: rgb(0, 5, 10);
+}
+
+/* --------------------------Pagina "Lodge" ------------------------------------ */
+
+.main_lodge{
+    background-color: beige;
+}
+
+.sectionLodge_DivRight{
+    background-image: url(../assets/img/Img_Lodge1.jpg);
+    background-size: cover;
+    background-position: center;
 }
