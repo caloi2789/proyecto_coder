@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fuente1 {
+    font-family: 'Lato', sans-serif;
+}
+
+.fuente2 {
+    font-family: 'Caveat';
+}
+
+.sombra_White {
+    text-shadow: 1px 0px 0px white,
+        -1px 0px 0px white,
+        0px 1px 0px white,
+        0px -1px 0px white;
+}
+
+/* ---------------------------------Imagen de fondo para los header------------------------------------- */
+
+
+
+.Header__Img__Lodge {
+    background-image: url(../assets/img/Img_Lodge1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.Header__Img__Pesca {
+    background-image: url(../assets/img/header_pesca.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.Header__Img__Ubicacion {
+    background-image: url(../assets/img/header_ubicacion.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.Header__Img__Contacto {
+    background-image: url(../assets/img/header_3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* ---------------------------------NAVBAR------------------------------- */
+
+.header_Index {
+    background-image: url(../assets/img/header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    .navbar_blur {
+        background-color: #776f796e;
+        backdrop-filter: blur(3px) saturate(150%);
+    }
+}
+
+
+
+.navbar__brand {
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-left: 10vw !important;
+}
+
+.img_Logo {
+    border-radius: 35% 15%;
+    height: 17vh !important;
+}
+
+.nav_Ul_Link_1 {
+    color: aliceblue !important;
+    font-size: 1.4rem;
+    border-left: 2px solid aliceblue;
+    border-right: 2px solid aliceblue;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.nav_Ul_Link {
+    color: aliceblue !important;
+    font-size: 1.4rem;
+    border-right: 2px solid aliceblue;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+@media (max-width: 991px) {
+    .lista_SinBorde li a {
+        border: none;
+    }
+}
+
+.navbar-social a {
+    color: white;
+}
+
+.navbar-toggler-color {
+    border-color: aliceblue !important;
+    border: 3px solid aliceblue !important;
+}
+
+
+
+
+
+/* ------------------------Seccion titulo del header------------------------------- */
+
+.section__titulo_header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 85vh;
+}
+
+.div__titulo_header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.estilo_h1_header {
+    font-size: 8rem;
+    color: aliceblue;
+    text-align: center;
+    text-shadow: 3px 0px 0px rgb(10, 10, 10),
+        -3px 0px 0px rgb(10, 10, 10),
+        0px 3px 0px rgb(10, 10, 10),
+        0px -3px 0px rgb(10, 10, 10);
+}
+
+.estilo_p_header {
+    color: aliceblue;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 1px 0px 0px rgb(10, 10, 10),
+        -1px 0px 0px rgb(10, 10, 10),
+        0px 1px 0px rgb(10, 10, 10),
+        0px -1px 0px rgb(10, 10, 10);
+}
+
+
+/* ------------------Secciones del main --------------------- */
+
+.div_imagen img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ---------------------Seccion Video--------------------------- */
+
+.bordeVideo {
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+/* ----------------------------- Footer-------------------------------------- */
+
+.divFooter {
+    color: aliceblue;
+    background-image: linear-gradient(to right top, #232022, #3a2f31, #513f3b, #635344, #6e6a50, #656c52, #5b6e57, #516f5e, #3f5950, #314440, #24302f, #191d1d);
+}
+
+/* --------------------------Icono de WhatsApp fijado ------------------------------------ */
+
+.fixedWsp {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+    /*para que este por encima de todo*/
+    display: inline-block;
+    /* convertir a bloque y establecer altura/ancho iguales */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    /* hacer que tenga bordes redondeados */
+    text-align: center;
+    /* centrar el contenido dentro del círculo */
+    line-height: 20px;
+    /* ajustar el espacio dentro del círculo */
+    font-size: 3.5rem;
+}
+
+.fa-whatsapp {
+    color: rgb(0, 5, 10);
+}
+
+/* --------------------------Pagina "Lodge" ------------------------------------ */
+
+.main_lodge{
+    background-color: beige;
+}
+
+.sectionLodge_DivRight{
+    background-image: url(../assets/img/Img_Lodge1.jpg);
+    background-size: cover;
+    background-position: center;
+}
