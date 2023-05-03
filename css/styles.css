@@ -1,18 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
-.fuente1 {
-  font-family: "Lato", sans-serif;
-}
-
-.fuente2 {
-  font-family: "Caveat";
-}
-
-.sombra_White {
-  text-shadow: 1px 0px 0px white, -1px 0px 0px white, 0px 1px 0px white, 0px -1px 0px white;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -85,97 +73,89 @@
 .navHeader .navbar-toggler-color:hover {
   border-color: rgb(132, 52, 190) !important;
 }
-.navHeader .nav_Ul_Link_1 {
-  color: aliceblue !important;
+.navHeader li {
   font-size: 1.4rem;
-  border-left: 2px solid aliceblue;
   border-right: 2px solid aliceblue;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
-.navHeader .nav_Ul_Link {
+.navHeader li a {
   color: aliceblue !important;
-  font-size: 1.4rem;
-  border-right: 2px solid aliceblue;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  font-weight: 600;
+}
+.navHeader .Link_1 {
+  border-left: 2px solid aliceblue !important;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 @media (max-width: 991px) {
   .navHeader .lista_SinBorde li a {
     border: none;
   }
 }
-.navHeader .navbar-social a {
+.navHeader i {
   color: white;
+}
+.navHeader i:hover {
+  -webkit-animation-name: fa-beat;
+  animation-name: fa-beat;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+  animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+  animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+  animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+  animation-timing-function: var(--fa-animation-timing, ease-in-out);
 }
 
 /* ------------------------Section titulo del header------------------------------- */
-.section__titulo_header {
+.section_titulo_header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   height: 85vh;
+  font-family: "Caveat";
 }
-.section__titulo_header div {
+.section_titulo_header div {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-evenly;
 }
-.section__titulo_header div h1 {
+.section_titulo_header div h1 {
   font-size: 8rem;
   color: aliceblue;
   text-align: center;
   text-shadow: 3px 0px 0px rgb(10, 10, 10), -3px 0px 0px rgb(10, 10, 10), 0px 3px 0px rgb(10, 10, 10), 0px -3px 0px rgb(10, 10, 10);
 }
-.section__titulo_header div p {
+.section_titulo_header div p {
   color: aliceblue;
   text-align: center;
   font-size: 3rem;
   text-shadow: 1px 0px 0px rgb(10, 10, 10), -1px 0px 0px rgb(10, 10, 10), 0px 1px 0px rgb(10, 10, 10), 0px -1px 0px rgb(10, 10, 10);
 }
 
-/* ----------------------------- Footer-------------------------------------- */
-.divFooter {
-  color: aliceblue;
-  background-image: linear-gradient(to right top, #232022, #3a2f31, #513f3b, #635344, #6e6a50, #656c52, #5b6e57, #516f5e, #3f5950, #314440, #24302f, #191d1d);
+.main_Index {
+  background-color: beige;
+  font-family: "Lato", sans-serif;
 }
-
-/* --------------------------Icono de WhatsApp fijado ------------------------------------ */
-.fixedWsp {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  z-index: 1000;
-  /*para que este por encima de todo*/
-  display: inline-block;
-  /* convertir a bloque y establecer altura/ancho iguales */
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  /* hacer que tenga bordes redondeados */
+.main_Index h2 {
+  text-shadow: 1px 0px 0px white, -1px 0px 0px white, 0px 1px 0px white, 0px -1px 0px white;
   text-align: center;
-  /* centrar el contenido dentro del círculo */
-  line-height: 20px;
-  /* ajustar el espacio dentro del círculo */
-  font-size: 3.5rem;
 }
-
-.fa-whatsapp {
-  color: rgb(0, 5, 10);
+.main_Index h3 {
+  font-family: "Caveat";
+  text-align: center;
 }
-
-/* ------------------Clases Index--------------------- */
-.div_imagen img {
+.main_Index p {
+  font-family: "Caveat";
+}
+.main_Index .div_imagen img {
   width: 100%;
   object-fit: cover;
-}
-
-/* ---------------------Seccion Video--------------------------- */
-.bordeVideo {
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 /* --------------------------Pagina "Lodge" ------------------------------------ */
@@ -189,4 +169,48 @@
   background-position: center;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/* ----------------------------- Footer-------------------------------------- */
+Footer {
+  font-family: "Lato", sans-serif;
+  border-radius: 0.25rem;
+  color: aliceblue;
+  background-image: linear-gradient(to right top, #232022, #3a2f31, #513f3b, #635344, #6e6a50, #656c52, #5b6e57, #516f5e, #3f5950, #314440, #24302f, #191d1d);
+}
+Footer .img_Logo {
+  border-radius: 35% 15%;
+  height: 17vh !important;
+}
+Footer p {
+  text-align: center;
+  font-family: "Caveat";
+}
+Footer a {
+  color: aliceblue;
+  text-decoration: none;
+}
+Footer h4 {
+  text-decoration: underline;
+}
+Footer .icono_trip {
+  height: 2em;
+  width: 2em;
+  vertical-align: top;
+}
+
+/* --------------------------Icono de WhatsApp fijado ------------------------------------ */
+.fixedWsp {
+  position: fixed;
+  bottom: 10px;
+  right: 5px;
+  z-index: 1000;
+  /*para que este por encima de todo*/
+  /* convertir a bloque y establecer altura/ancho iguales */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  /* hacer que tenga bordes redondeados */
+  text-align: center;
+  /* centrar el contenido dentro del círculo */
+  /* ajustar el espacio dentro del círculo */
+  font-size: 3rem;
+}/*# sourceMappingURL=styles.css.map */

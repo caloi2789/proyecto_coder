@@ -1,18 +1,29 @@
-/* ------------------Clases Index--------------------- */
+.main_Index {
+    background-color: $fondo-main;
+    font-family: $fuente-1;
 
+    h2 {
+        text-shadow: 1px 0px 0px white,
+            -1px 0px 0px white,
+            0px 1px 0px white,
+            0px -1px 0px white;
+        text-align: center;
+    }
 
+    h3 {
+        font-family: $fuente-2;
+        text-align: center;
+    }
 
+    p {
+        font-family: $fuente-2;
+    }
 
-
-.div_imagen img {
-    width: 100%;
-    object-fit: cover;
+    .div_imagen img {
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
-/* ---------------------Seccion Video--------------------------- */
 
-.bordeVideo {
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-}
+

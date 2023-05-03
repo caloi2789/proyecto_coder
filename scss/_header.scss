@@ -24,22 +24,24 @@
         }
     }
 
-    .nav_Ul_Link_1 {
-        color: aliceblue !important;
+    li {
         font-size: 1.4rem;
-        border-left: 2px solid aliceblue;
         border-right: 2px solid aliceblue;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem; 
+        
+        a {
+            color: aliceblue !important;
+            font-weight: 600;
+        }
     }
 
-    .nav_Ul_Link {
-        color: aliceblue !important;
-        font-size: 1.4rem;
-        border-right: 2px solid aliceblue;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+    .Link_1 {
+        border-left: 2px solid aliceblue !important;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
+
 
     @media (max-width: 991px) {
         .lista_SinBorde li a {
@@ -47,19 +49,36 @@
         }
     }
 
-    .navbar-social a {
+    i {
         color: white;
-    }
 
+        &:hover {
+            -webkit-animation-name: fa-beat;
+            animation-name: fa-beat;
+            -webkit-animation-delay: var(--fa-animation-delay, 0s);
+            animation-delay: var(--fa-animation-delay, 0s);
+            -webkit-animation-direction: var(--fa-animation-direction, normal);
+            animation-direction: var(--fa-animation-direction, normal);
+            -webkit-animation-duration: var(--fa-animation-duration, 1s);
+            animation-duration: var(--fa-animation-duration, 1s);
+            -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+            animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+            -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+            animation-timing-function: var(--fa-animation-timing, ease-in-out)
+        }
+    }
 }
+
+
 
 /* ------------------------Section titulo del header------------------------------- */
 
-.section__titulo_header {
+.section_titulo_header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     height: 85vh;
+    font-family: $fuente-2;
 
     div {
         display: flex;
