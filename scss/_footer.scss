@@ -1,0 +1,31 @@
+/* ----------------------------- Footer-------------------------------------- */
+
+.divFooter {
+    color: aliceblue;
+    background-image: linear-gradient(to right top, #232022, #3a2f31, #513f3b, #635344, #6e6a50, #656c52, #5b6e57, #516f5e, #3f5950, #314440, #24302f, #191d1d);
+}
+
+/* --------------------------Icono de WhatsApp fijado ------------------------------------ */
+
+.fixedWsp {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+    /*para que este por encima de todo*/
+    display: inline-block;
+    /* convertir a bloque y establecer altura/ancho iguales */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    /* hacer que tenga bordes redondeados */
+    text-align: center;
+    /* centrar el contenido dentro del círculo */
+    line-height: 20px;
+    /* ajustar el espacio dentro del círculo */
+    font-size: 3.5rem;
+}
+
+.fa-whatsapp {
+    color: rgb(0, 5, 10);
+}

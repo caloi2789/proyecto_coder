@@ -1,12 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .fuente1 {
   font-family: "Lato", sans-serif;
 }
@@ -19,7 +13,21 @@
   text-shadow: 1px 0px 0px white, -1px 0px 0px white, 0px 1px 0px white, 0px -1px 0px white;
 }
 
-/* ---------------------------------Imagen de fondo para los header------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Header__Img__Index {
+  background-image: url(../assets/img/header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+
 .Header__Img__Lodge {
   background-image: url(../assets/img/Img_Lodge1.jpg);
   background-size: cover;
@@ -56,32 +64,28 @@
   overflow: hidden;
 }
 
-/* ---------------------------------NAVBAR------------------------------- */
-.header_Index {
-  background-image: url(../assets/img/header.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  overflow: hidden;
-}
-.header_Index .navbar_blur {
+/* ------------------------Barra de Navegacion------------------------------- */
+.navHeader {
   background-color: rgba(119, 111, 121, 0.431372549);
   backdrop-filter: blur(3px) saturate(150%);
 }
-
-.navbar__brand {
+.navHeader .navHeader_Logo {
   padding: 0 !important;
   margin: 0 !important;
   margin-left: 10vw !important;
 }
-
-.img_Logo {
+.navHeader .navHeader_Logo .img_Logo {
   border-radius: 35% 15%;
   height: 17vh !important;
 }
-
-.nav_Ul_Link_1 {
+.navHeader .navbar-toggler-color {
+  border-color: aliceblue !important;
+  border: 5px solid aliceblue !important;
+}
+.navHeader .navbar-toggler-color:hover {
+  border-color: rgb(132, 52, 190) !important;
+}
+.navHeader .nav_Ul_Link_1 {
   color: aliceblue !important;
   font-size: 1.4rem;
   border-left: 2px solid aliceblue;
@@ -89,69 +93,46 @@
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
-
-.nav_Ul_Link {
+.navHeader .nav_Ul_Link {
   color: aliceblue !important;
   font-size: 1.4rem;
   border-right: 2px solid aliceblue;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
-
 @media (max-width: 991px) {
-  .lista_SinBorde li a {
+  .navHeader .lista_SinBorde li a {
     border: none;
   }
 }
-.navbar-social a {
+.navHeader .navbar-social a {
   color: white;
 }
 
-.navbar-toggler-color {
-  border-color: aliceblue !important;
-  border: 3px solid aliceblue !important;
-}
-
-/* ------------------------Seccion titulo del header------------------------------- */
+/* ------------------------Section titulo del header------------------------------- */
 .section__titulo_header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   height: 85vh;
 }
-
-.div__titulo_header {
+.section__titulo_header div {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-evenly;
 }
-
-.estilo_h1_header {
+.section__titulo_header div h1 {
   font-size: 8rem;
   color: aliceblue;
   text-align: center;
   text-shadow: 3px 0px 0px rgb(10, 10, 10), -3px 0px 0px rgb(10, 10, 10), 0px 3px 0px rgb(10, 10, 10), 0px -3px 0px rgb(10, 10, 10);
 }
-
-.estilo_p_header {
+.section__titulo_header div p {
   color: aliceblue;
   text-align: center;
   font-size: 3rem;
   text-shadow: 1px 0px 0px rgb(10, 10, 10), -1px 0px 0px rgb(10, 10, 10), 0px 1px 0px rgb(10, 10, 10), 0px -1px 0px rgb(10, 10, 10);
-}
-
-/* ------------------Secciones del main --------------------- */
-.div_imagen img {
-  width: 100%;
-  object-fit: cover;
-}
-
-/* ---------------------Seccion Video--------------------------- */
-.bordeVideo {
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 /* ----------------------------- Footer-------------------------------------- */
@@ -182,6 +163,19 @@
 
 .fa-whatsapp {
   color: rgb(0, 5, 10);
+}
+
+/* ------------------Clases Index--------------------- */
+.div_imagen img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ---------------------Seccion Video--------------------------- */
+.bordeVideo {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 /* --------------------------Pagina "Lodge" ------------------------------------ */
