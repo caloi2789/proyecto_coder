@@ -9,36 +9,20 @@
 
 .Header__Img__Lodge {
     background-image: url(../assets/img/Img_Lodge1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    overflow: hidden;
+    @extend .Header__Img__Index
 }
 
 .Header__Img__Pesca {
     background-image: url(../assets/img/header_pesca.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    overflow: hidden;
+    @extend .Header__Img__Index
 }
 
 .Header__Img__Ubicacion {
     background-image: url(../assets/img/header_ubicacion.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    overflow: hidden;
+    @extend .Header__Img__Index
 }
 
 .Header__Img__Contacto {
     background-image: url(../assets/img/header_3.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    overflow: hidden;
+    @extend .Header__Img__Index
 }

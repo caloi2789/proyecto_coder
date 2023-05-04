@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-.Header__Img__Index {
+.Header__Img__Index, .Header__Img__Contacto, .Header__Img__Ubicacion, .Header__Img__Pesca, .Header__Img__Lodge {
   background-image: url(../assets/img/header.jpg);
   background-size: cover;
   background-position: center;
@@ -18,38 +18,18 @@
 
 .Header__Img__Lodge {
   background-image: url(../assets/img/Img_Lodge1.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  overflow: hidden;
 }
 
 .Header__Img__Pesca {
   background-image: url(../assets/img/header_pesca.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  overflow: hidden;
 }
 
 .Header__Img__Ubicacion {
   background-image: url(../assets/img/header_ubicacion.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  overflow: hidden;
 }
 
 .Header__Img__Contacto {
   background-image: url(../assets/img/header_3.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  overflow: hidden;
 }
 
 /* ------------------------Barra de Navegacion------------------------------- */
@@ -161,12 +141,6 @@
 /* --------------------------Pagina "Lodge" ------------------------------------ */
 .main_lodge {
   background-color: beige;
-}
-
-.sectionLodge_DivRight {
-  background-image: url(../assets/img/Img_Lodge1.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 /* ----------------------------- Footer-------------------------------------- */
