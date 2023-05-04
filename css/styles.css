@@ -143,6 +143,19 @@
   background-color: beige;
 }
 
+/* --------------------------Pagina "Pesca" ------------------------------------ */
+.main_pesca {
+  background-color: beige;
+}
+
+main {
+  background-color: beige;
+}
+main section h1 {
+  font-weight: 700 !important;
+  text-align: center;
+}
+
 /* ----------------------------- Footer-------------------------------------- */
 Footer {
   font-family: "Lato", sans-serif;
