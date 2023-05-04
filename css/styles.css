@@ -7,31 +7,6 @@
   box-sizing: border-box;
 }
 
-.Header__Img__Index, .Header__Img__Contacto, .Header__Img__Ubicacion, .Header__Img__Pesca, .Header__Img__Lodge {
-  background-image: url(../assets/img/header.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.Header__Img__Lodge {
-  background-image: url(../assets/img/Img_Lodge1.jpg);
-}
-
-.Header__Img__Pesca {
-  background-image: url(../assets/img/header_pesca.jpg);
-}
-
-.Header__Img__Ubicacion {
-  background-image: url(../assets/img/header_ubicacion.jpg);
-}
-
-.Header__Img__Contacto {
-  background-image: url(../assets/img/header_3.jpg);
-}
-
 /* ------------------------Barra de Navegacion------------------------------- */
 .navHeader {
   background-color: rgba(119, 111, 121, 0.431372549);
@@ -118,6 +93,31 @@
   text-shadow: 1px 0px 0px rgb(10, 10, 10), -1px 0px 0px rgb(10, 10, 10), 0px 1px 0px rgb(10, 10, 10), 0px -1px 0px rgb(10, 10, 10);
 }
 
+.Header__Img__Index, .Header__Img__Contacto, .Header__Img__Ubicacion, .Header__Img__Pesca, .Header__Img__Lodge {
+  background-image: url(../assets/img/header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.Header__Img__Lodge {
+  background-image: url(../assets/img/Img_Lodge1.jpg);
+}
+
+.Header__Img__Pesca {
+  background-image: url(../assets/img/header_pesca.jpg);
+}
+
+.Header__Img__Ubicacion {
+  background-image: url(../assets/img/header_ubicacion.jpg);
+}
+
+.Header__Img__Contacto {
+  background-image: url(../assets/img/header_3.jpg);
+}
+
 .main_Index {
   background-color: beige;
   font-family: "Lato", sans-serif;
@@ -148,12 +148,20 @@
   background-color: beige;
 }
 
+/* --------------------------Pagina "Ubicacion" ------------------------------------ */
 main {
   background-color: beige;
 }
 main section h1 {
   font-weight: 700 !important;
   text-align: center;
+  font-family: "Lucida Sans";
+}
+main a {
+  color: black;
+}
+main .bordes {
+  border-right: 3px solid black;
 }
 
 /* ----------------------------- Footer-------------------------------------- */

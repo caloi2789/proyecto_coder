@@ -1,3 +1,4 @@
+/* --------------------------Pagina "Ubicacion" ------------------------------------ */
 main {
     background-color: $fondo-main;
 
@@ -6,7 +7,16 @@ main {
         h1 {
             font-weight: 700 !important;
             text-align: center;
+            font-family:$fuente-3;
         }
 
+    }
+
+    a{
+        color: black;
+    }
+
+    .bordes {
+        border-right: map-get($bordes, ancho3,);
     }
 }
