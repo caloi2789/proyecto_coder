@@ -38,18 +38,19 @@
   color: aliceblue !important;
   font-weight: 600;
 }
-.navHeader .Link_1 {
-  border-left: 2px solid aliceblue !important;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
 @media (max-width: 991px) {
   .navHeader .lista_SinBorde li a {
     border: none;
   }
 }
+.navHeader .Link_1 {
+  border-left: 2px solid aliceblue !important;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
 .navHeader i {
   color: white;
+  /* ------------------------Copie el codigo de la animacion de fontawesome y la meti en un hover------------------------------- */
 }
 .navHeader i:hover {
   -webkit-animation-name: fa-beat;

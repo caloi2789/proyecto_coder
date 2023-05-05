@@ -28,11 +28,17 @@
         font-size: 1.4rem;
         border-right: 2px solid aliceblue;
         padding-left: 0.5rem;
-        padding-right: 0.5rem; 
-        
+        padding-right: 0.5rem;
+
         a {
             color: aliceblue !important;
             font-weight: 600;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .lista_SinBorde li a {
+            border: none;
         }
     }
 
@@ -43,14 +49,12 @@
     }
 
 
-    @media (max-width: 991px) {
-        .lista_SinBorde li a {
-            border: none;
-        }
-    }
+
 
     i {
         color: white;
+
+        /* ------------------------Copie el codigo de la animacion de fontawesome y la meti en un hover------------------------------- */
 
         &:hover {
             -webkit-animation-name: fa-beat;

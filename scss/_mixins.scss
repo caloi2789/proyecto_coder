@@ -1,0 +1,4 @@
+@mixin div_imagen($ancho, $ajuste) {
+    width: $ancho;
+    object-fit: $ajuste;
+}

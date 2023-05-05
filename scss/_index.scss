@@ -20,10 +20,6 @@
     }
 
     .div_imagen img {
-        width: 100%;
-        object-fit: cover;
+        @include div_imagen (100%, cover)
     }
 }
-
-
-
