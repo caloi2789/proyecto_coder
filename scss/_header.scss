@@ -7,7 +7,7 @@
     .navHeader_Logo {
         padding: 0 !important;
         margin: 0 !important;
-        margin-left: 10vw !important;
+        margin-left: 5vw !important;
 
         .img_Logo {
             border-radius: 35% 15%;
@@ -37,14 +37,14 @@
     }
 
     .Link_1 {
-        border-left: 2px solid aliceblue !important;
+        border-left: 2px solid aliceblue;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
 
 
     @media (max-width: 991px) {
-        .lista_SinBorde li a {
+        .lista_SinBorde li{
             border: none;
         }
     }
