@@ -7,7 +7,7 @@
     .navHeader_Logo {
         padding: 0 !important;
         margin: 0 !important;
-        margin-left: 10vw !important;
+        margin-left: 5vw !important;
 
         .img_Logo {
             border-radius: 35% 15%;
@@ -30,25 +30,39 @@
         padding-left: 0.5rem;
         padding-right: 0.5rem;
 
+        
+        }
+
         a {
             color: aliceblue !important;
             font-weight: 600;
-        }
-    }
 
-    @media (max-width: 991px) {
-        .lista_SinBorde li a {
-            border: none;
+            &:hover{
+                content:'';
+                width: 100%;
+                height:1px;
+                background-color: #fff;
+                border-radius:4px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                transform:scaleX(0);
+                transform-origin: left;
+                transition: transform .25s ease;
         }
     }
 
     .Link_1 {
-        border-left: 2px solid aliceblue !important;
+        border-left: 2px solid aliceblue;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
 
-
+    @media (max-width: 991px) {
+        .lista_SinBorde li {
+            border: none;
+        }
+    }
 
 
     i {
