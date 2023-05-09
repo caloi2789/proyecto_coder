@@ -34,22 +34,9 @@
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-.navHeader a {
+.navHeader li a {
   color: aliceblue !important;
   font-weight: 600;
-}
-.navHeader a:hover {
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color: #fff;
-  border-radius: 4px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.25s ease;
 }
 .navHeader .Link_1 {
   border-left: 2px solid aliceblue;
