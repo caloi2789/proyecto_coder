@@ -13,20 +13,20 @@
   backdrop-filter: blur(3px) saturate(150%);
 }
 .navHeader .navHeader_Logo {
-  padding: 0 !important;
-  margin: 0 !important;
-  margin-left: 5vw !important;
+  padding: 0;
+  margin: 0;
+  margin-left: 5vw;
 }
 .navHeader .navHeader_Logo .img_Logo {
   border-radius: 35% 15%;
-  height: 17vh !important;
+  height: 17vh;
 }
 .navHeader .navbar-toggler-color {
-  border-color: aliceblue !important;
-  border: 5px solid aliceblue !important;
+  border-color: aliceblue;
+  border: 5px solid aliceblue;
 }
 .navHeader .navbar-toggler-color:hover {
-  border-color: rgb(132, 52, 190) !important;
+  border-color: rgb(132, 52, 190);
 }
 .navHeader li {
   font-size: 1.4rem;
@@ -36,14 +36,33 @@
 }
 .navHeader li a {
   color: aliceblue !important;
-  font-weight: 600;
+  /*Este !important esta para que no use el color de la clase de bts*/
+  font-weight: 700;
+  position: relative;
+}
+@media screen and (min-width: 991px) {
+  .navHeader li a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.5s ease-in-out;
+    /* Agrega una transición de 0.5 segundos con un efecto de entrada y salida */
+  }
+  .navHeader li a:hover::after {
+    width: 100%;
+  }
 }
 .navHeader .Link_1 {
   border-left: 2px solid aliceblue;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .navHeader .lista_SinBorde li {
     border: none;
   }
@@ -123,6 +142,9 @@
   background-color: beige;
   font-family: "Lato", sans-serif;
 }
+.main_Index section {
+  background-image: radial-gradient(circle, #f5f5dc, #f5f5dc, #f5f5dc, #f5f5dc, #f5f5dc, #f0f0d9, #ececd5, #e7e7d2, #ddddcb, #d2d2c3, #c8c8bc, #bebeb5);
+}
 .main_Index h2 {
   text-shadow: 1px 0px 0px white, -1px 0px 0px white, 0px 1px 0px white, 0px -1px 0px white;
   text-align: center;
@@ -133,6 +155,7 @@
 }
 .main_Index p {
   font-family: "Caveat";
+  white-space: pre-line;
 }
 .main_Index .div_imagen img {
   width: 100%;
@@ -153,13 +176,19 @@
 main {
   background-color: beige;
 }
-main section h1 {
+main section h2 { /*Titulo Main */
   font-weight: 700 !important;
   text-align: center;
   font-family: "Lucida Sans";
 }
+main .p_ubicacion {
+  font-family: "Caveat";
+  font-weight: 500;
+  white-space: pre-line;
+}
 main a {
-  color: black;
+  color: rgb(63, 7, 7);
+  /*Agregar una animacion a los iconos*/
 }
 main .bordes {
   border-right: 3px solid black;
@@ -179,12 +208,15 @@ Footer .img_Logo {
 Footer p {
   text-align: center;
   font-family: "Caveat";
+  white-space: pre-line;
 }
 Footer a {
   color: aliceblue;
   text-decoration: none;
 }
-Footer h4 {
+Footer .p_redes {
+  font-size: 2rem;
+  font-weight: 700;
   text-decoration: underline;
 }
 Footer .icono_trip {

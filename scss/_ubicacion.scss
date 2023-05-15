@@ -4,7 +4,7 @@ main {
 
     section {
 
-        h1 {
+        h2 {  /*Titulo Main */
             font-weight: 700 !important;
             text-align: center;
             font-family:$fuente-3;
@@ -12,8 +12,15 @@ main {
 
     }
 
+    .p_ubicacion {
+        font-family: $fuente-2;
+        font-weight: 500;
+        white-space: pre-line;
+    }
+
     a{
-        color: black;
+        color: rgb(63, 7, 7);
+        /*Agregar una animacion a los iconos*/
     }
 
     .bordes {

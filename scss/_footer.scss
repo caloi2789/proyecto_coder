@@ -14,6 +14,7 @@ Footer {
   p {
     text-align: center;
     font-family: $fuente-2;
+    white-space: pre-line;
   }
 
   a {
@@ -21,8 +22,10 @@ Footer {
     text-decoration: none;
   }
 
-  h4 {
-    text-decoration: underline;
+  .p_redes {
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: underline; 
   }
 
   .icono_trip {

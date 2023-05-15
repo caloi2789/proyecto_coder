@@ -5,22 +5,22 @@
     backdrop-filter: blur(3px) saturate(150%);
 
     .navHeader_Logo {
-        padding: 0 !important;
-        margin: 0 !important;
-        margin-left: 5vw !important;
+        padding: 0;
+        margin: 0;
+        margin-left: 5vw;
 
         .img_Logo {
             border-radius: 35% 15%;
-            height: 17vh !important;
+            height: 17vh;
         }
     }
 
     .navbar-toggler-color {
-        border-color: aliceblue !important;
-        border: 5px solid aliceblue !important;
+        border-color: aliceblue;
+        border: 5px solid aliceblue;
 
         &:hover {
-            border-color: rgb(132, 52, 190) !important;
+            border-color: rgb(132, 52, 190);
         }
     }
 
@@ -32,7 +32,31 @@
 
         a {
             color: aliceblue !important;
-            font-weight: 600;
+            /*Este !important esta para que no use el color de la clase de bts*/
+            font-weight: 700;
+            position: relative;
+
+            @media screen and (min-width: 991px) {
+
+                &:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0;
+                    height: 2px;
+                    background-color: white;
+                    transition: width 0.5s ease-in-out;
+                    /* Agrega una transición de 0.5 segundos con un efecto de entrada y salida */
+                }
+
+                &:hover::after {
+                    width: 100%;
+                }
+
+            }
+
         }
     }
 
@@ -42,7 +66,7 @@
         padding-right: 0.5rem;
     }
 
-    @media (max-width: 991px) {
+    @media screen and (max-width: 991px) {
         .lista_SinBorde li {
             border: none;
         }
