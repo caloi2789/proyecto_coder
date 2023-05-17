@@ -3,7 +3,12 @@
     font-family: $fuente-1;
 
     section{
-        background-image: radial-gradient(circle, #f5f5dc, #f5f5dc, #f5f5dc, #f5f5dc, #f5f5dc, #f0f0d9, #ececd5, #e7e7d2, #ddddcb, #d2d2c3, #c8c8bc, #bebeb5);
+        background-image: $fondo_main_img;
+        
+    }
+    .section_vid {
+        background-image: radial-gradient(circle, #f5f5dc, #f5f5dc, #f5f5dc, #f5f5dc, #f5f5dc, #e6e8d1, #d8dac5, #cacdba, #abafa1, #8e9288, #737670, #595b58);
+        // border-top: black solid 2px;
     }
 
     h2 {
@@ -25,6 +30,6 @@
     }
 
     .div_imagen img {
-        @include div_imagen (100%, cover)
+        @include div_imagenMain (100%, cover)
     }
 }

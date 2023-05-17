@@ -145,6 +145,9 @@
 .main_Index section {
   background-image: radial-gradient(circle, #f5f5dc, #f5f5dc, #f5f5dc, #f5f5dc, #f5f5dc, #f0f0d9, #ececd5, #e7e7d2, #ddddcb, #d2d2c3, #c8c8bc, #bebeb5);
 }
+.main_Index .section_vid {
+  background-image: radial-gradient(circle, #f5f5dc, #f5f5dc, #f5f5dc, #f5f5dc, #f5f5dc, #e6e8d1, #d8dac5, #cacdba, #abafa1, #8e9288, #737670, #595b58);
+}
 .main_Index h2 {
   text-shadow: 1px 0px 0px white, -1px 0px 0px white, 0px 1px 0px white, 0px -1px 0px white;
   text-align: center;
@@ -164,12 +167,18 @@
 
 /* --------------------------Pagina "Lodge" ------------------------------------ */
 .main_lodge {
-  background-color: beige;
+  background-image: radial-gradient(circle, #f5f5dc, #f5f5dc, #f5f5dc, #f5f5dc, #f5f5dc, #f0f0d9, #ececd5, #e7e7d2, #ddddcb, #d2d2c3, #c8c8bc, #bebeb5);
+}
+.main_lodge h2 {
+  font-family: "Caveat";
 }
 
 /* --------------------------Pagina "Pesca" ------------------------------------ */
 .main_pesca {
-  background-color: beige;
+  background-image: radial-gradient(circle, #f5f5dc, #f5f5dc, #f5f5dc, #f5f5dc, #f5f5dc, #f0f0d9, #ececd5, #e7e7d2, #ddddcb, #d2d2c3, #c8c8bc, #bebeb5);
+}
+.main_pesca h2 {
+  font-family: "Caveat";
 }
 
 /* --------------------------Pagina "Ubicacion" ------------------------------------ */

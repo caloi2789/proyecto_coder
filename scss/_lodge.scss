@@ -1,5 +1,9 @@
 /* --------------------------Pagina "Lodge" ------------------------------------ */
 
 .main_lodge{
-    background-color: $fondo-main;
+    background-image: $fondo_main_img;
+
+    h2 {
+        font-family: $fuente-2;
+    }
 }
