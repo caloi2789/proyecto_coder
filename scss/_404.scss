@@ -1,0 +1,124 @@
+.navHeader_404 {
+    background-color: #000000;
+    backdrop-filter: blur(3px) saturate(150%);
+
+    .navHeader_Logo {
+        padding: 0;
+        margin: 0;
+        margin-left: 5vw;
+
+        .img_Logo {
+            border-radius: 35% 15%;
+            height: 17vh;
+        }
+    }
+
+    .navbar-toggler-color {
+        border-color: aliceblue;
+        border: 5px solid aliceblue;
+
+        &:hover {
+            border-color: rgb(132, 52, 190);
+        }
+    }
+
+    li {
+        font-size: 1.4rem;
+        border-right: 2px solid aliceblue;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+
+        a {
+            color: aliceblue !important;
+            /*Este !important esta para que no use el color de la clase de bts*/
+            font-weight: 700;
+            position: relative;
+
+            @media screen and (min-width: 991px) {
+
+                &:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0;
+                    height: 2px;
+                    background-color: white;
+                    transition: width 0.5s ease-in-out;
+                    /* Agrega una transición de 0.5 segundos con un efecto de entrada y salida */
+                }
+
+                &:hover::after {
+                    width: 100%;
+                }
+
+            }
+
+        }
+    }
+
+    .Link_1 {
+        border-left: 2px solid aliceblue;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    @media screen and (max-width: 991px) {
+        .lista_SinBorde li {
+            border: none;
+        }
+    }
+
+
+    i {
+        color: white;
+
+        /* ------------------------Copie el codigo de la animacion de fontawesome y la meti en un hover------------------------------- */
+
+        &:hover {
+            -webkit-animation-name: fa-beat;
+            animation-name: fa-beat;
+            -webkit-animation-delay: var(--fa-animation-delay, 0s);
+            animation-delay: var(--fa-animation-delay, 0s);
+            -webkit-animation-direction: var(--fa-animation-direction, normal);
+            animation-direction: var(--fa-animation-direction, normal);
+            -webkit-animation-duration: var(--fa-animation-duration, 1s);
+            animation-duration: var(--fa-animation-duration, 1s);
+            -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+            animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+            -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+            animation-timing-function: var(--fa-animation-timing, ease-in-out)
+        }
+    }
+}
+
+.fondo_404 {
+    background-image: url(/assets/img/fondo_404.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+
+    h1 {
+        font-family: $fuente-2;
+        color: white;
+    }
+
+    h2 {
+        font-family: $fuente-1;
+        color: white;
+    }
+
+    p {
+        font-style: $fuente-1;
+        color: white;
+        text-shadow: 1px 0px 0px rgb(10, 10, 10),
+            -1px 0px 0px rgb(10, 10, 10),
+            0px 1px 0px rgb(10, 10, 10),
+            0px -1px 0px rgb(10, 10, 10);
+        white-space: pre-line;
+        font-style: italic;
+    }
+}
