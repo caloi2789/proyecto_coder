@@ -1,20 +1,23 @@
 /* --------------------------Pagina "Ubicacion" ------------------------------------ */
 main {
-    background-color: $fondo-main;
+    background-image: radial-gradient(circle, #f5f5dc, #f5f5dc, #f5f5dc, #f5f5dc, #f5f5dc, #e6e8d1, #d8dac5, #cacdba, #abafa1, #8e9288, #737670, #595b58);
 
     section {
 
         h2 {  /*Titulo Main */
-            font-weight: 700 !important;
-            text-align: center;
-            font-family:$fuente-3;
+            font-family:$fuente-2;
+            text-shadow: 1px 0px 0px white,
+            -1px 0px 0px white,
+            0px 1px 0px white,
+            0px -1px 0px white;
         }
 
     }
 
     .p_ubicacion {
-        font-family: $fuente-2;
+        font-family: $fuente-1;
         font-weight: 500;
+        font-style: italic;
         white-space: pre-line;
     }
 
