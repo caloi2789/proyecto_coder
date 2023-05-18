@@ -1,355 +1,281 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-
-
-/* El * selecciona todos los elementos del html*/
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.fuente1 {
-    font-family: 'Caveat', cursive;
+/* ------------------------Barra de Navegacion------------------------------- */
+.navHeader {
+  background-color: rgba(119, 111, 121, 0.431372549);
+  backdrop-filter: blur(3px) saturate(150%);
+}
+.navHeader .navHeader_Logo {
+  padding: 0;
+  margin: 0;
+  margin-left: 5vw;
+}
+.navHeader .navHeader_Logo .img_Logo {
+  border-radius: 35% 15%;
+  height: 17vh;
+}
+.navHeader .navbar-toggler-color {
+  border-color: aliceblue;
+  border: 5px solid aliceblue;
+}
+.navHeader .navbar-toggler-color:hover {
+  border-color: rgb(132, 52, 190);
+}
+.navHeader li {
+  font-size: 1.4rem;
+  border-right: 2px solid aliceblue;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.navHeader li a {
+  color: aliceblue !important;
+  /*Este !important esta para que no use el color de la clase de bts*/
+  font-weight: 700;
+  position: relative;
+}
+@media screen and (min-width: 991px) {
+  .navHeader li a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.5s ease-in-out;
+    /* Agrega una transición de 0.5 segundos con un efecto de entrada y salida */
+  }
+  .navHeader li a:hover::after {
+    width: 100%;
+  }
+}
+.navHeader .Link_1 {
+  border-left: 2px solid aliceblue;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+@media screen and (max-width: 991px) {
+  .navHeader .lista_SinBorde li {
+    border: none;
+  }
+}
+.navHeader i {
+  color: white;
+  /* ------------------------Copie el codigo de la animacion de fontawesome y la meti en un hover------------------------------- */
+}
+.navHeader i:hover {
+  -webkit-animation-name: fa-beat;
+  animation-name: fa-beat;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+  animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+  animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+  animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+  animation-timing-function: var(--fa-animation-timing, ease-in-out);
 }
 
-.fuente2 {
-    font-family: 'Lato', sans-serif;
+/* ------------------------Section titulo del header------------------------------- */
+.section_titulo_header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 85vh;
+  font-family: "Caveat";
+}
+.section_titulo_header div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.section_titulo_header div h1 {
+  font-size: 8rem;
+  color: aliceblue;
+  text-align: center;
+  text-shadow: 3px 0px 0px rgb(10, 10, 10), -3px 0px 0px rgb(10, 10, 10), 0px 3px 0px rgb(10, 10, 10), 0px -3px 0px rgb(10, 10, 10);
+}
+.section_titulo_header div p {
+  color: aliceblue;
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 1px 0px 0px rgb(10, 10, 10), -1px 0px 0px rgb(10, 10, 10), 0px 1px 0px rgb(10, 10, 10), 0px -1px 0px rgb(10, 10, 10);
 }
 
-/* ---------------------------------Imagen de fondo para los header------------------------------------- */
+.Header__Img__Index, .Header__Img__Contacto, .Header__Img__Ubicacion, .Header__Img__Pesca, .Header__Img__Lodge {
+  background-image: url(../assets/img/header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
 
-.Header__Img__Index {
-    background-image: url(../assets/img/header.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    overflow: hidden;
+.Header__Img__Lodge {
+  background-image: url(../assets/img/Img_Lodge1.jpg);
 }
 
 .Header__Img__Pesca {
-    background-image: url(../assets/img/header_pesca.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    overflow: hidden;
-
+  background-image: url(../assets/img/header_pesca.jpg);
 }
 
-/* ---------------------------------Barra de navegacion header------------------------------- */
-
-
-.divGlass {
-    display: flex;
-    flex-wrap: wrap;
-    /* background-color: rgba(255, 255, 255, 0.158);  */
-    backdrop-filter: blur(3px) saturate(150%);
-    height: 10vh;
+.Header__Img__Ubicacion {
+  background-image: url(../assets/img/header_ubicacion.jpg);
 }
 
-.divNav {
-    height: 100%;
-    width: 70%;
-    /* background-color: #314440; */
-    padding: 10px;
-    text-align: right;
+.Header__Img__Contacto {
+  background-image: url(../assets/img/header_3.jpg);
 }
-
-.listaNav {
-    list-style: none;
-    display: inline-block;
-    border-right: 3px solid aliceblue;
-    padding: 10px;
-}
-
-.li1 {
-    list-style: none;
-    display: inline-block;
-    border-right: 3px solid aliceblue;
-    border-left: 3px solid aliceblue;
-    padding: 10px;
-}
-
-.linkNav {
-    color: aliceblue;
-    text-decoration: none;
-    font-size: 1.3em;
-    font-weight: 700;
-}
-
-
-
-
-.divIconos {
-    /* background-color: coral; */
-    height: 100%;
-    text-align: right;
-    width: 30%;
-}
-
-.iconos {
-    display: inline-block;
-    margin: 1vw;
-    text-decoration: none;
-}
-
-/* ------------------------Seccion principal del header------------------------------- */
-
-.logo {
-    height: 25vh;
-    /* background-color: rgba(137, 43, 226, 0.411); */
-}
-
-.logo__img {
-    margin: 0 0 0 5vw;
-    border-radius: 30% 15%;
-    height: 100%;
-}
-
-.titulo {
-    color: aliceblue;
-    text-align: center;
-    font-size: 10rem;
-    /* background-color: #656c52b9; */
-}
-
-.sombraTxt1 {
-    text-shadow: 3px 0px 0px rgb(10, 10, 10),
-        -3px 0px 0px rgb(10, 10, 10),
-        0px 3px 0px rgb(10, 10, 10),
-        0px -3px 0px rgb(10, 10, 10);
-}
-
-.textoH2 {
-    color: aliceblue;
-    text-align: center;
-    font-size: 3rem;
-    /* background-color: rgba(0, 255, 255, 0.848); */
-}
-
-.sombraTxt2 {
-    text-shadow: 1px 0px 0px rgb(10, 10, 10),
-        -1px 0px 0px rgb(10, 10, 10),
-        0px 1px 0px rgb(10, 10, 10),
-        0px -1px 0px rgb(10, 10, 10);
-}
-
-/* ----------------------Todo el main comparte el mismo color de fondo--------------- */
-
 
 .main_Index {
-    background-color: rgb(196, 241, 197);
+  background-color: beige;
+  font-family: "Lato", sans-serif;
+}
+.main_Index section {
+  background-image: radial-gradient(circle, #f5f5dc, #f5f5dc, #f5f5dc, #f5f5dc, #f5f5dc, #f0f0d9, #ececd5, #e7e7d2, #ddddcb, #d2d2c3, #c8c8bc, #bebeb5);
+}
+.main_Index .section_vid {
+  background-image: radial-gradient(circle, #f5f5dc, #f5f5dc, #f5f5dc, #f5f5dc, #f5f5dc, #e6e8d1, #d8dac5, #cacdba, #abafa1, #8e9288, #737670, #595b58);
+}
+.main_Index h2 {
+  text-shadow: 1px 0px 0px white, -1px 0px 0px white, 0px 1px 0px white, 0px -1px 0px white;
+  text-align: center;
+  font-family: "Caveat";
+}
+.main_Index h3 {
+  font-family: "Caveat";
+  text-align: center;
+}
+.main_Index p {
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+  white-space: pre-line;
+}
+.main_Index .div_imagen img {
+  width: 100%;
+  object-fit: cover;
 }
 
-
-/* ------------------Secciones del main con el texto a la izq de la pantalla--------------------- */
-
-.section__Lodge {
-    /* display: inline-block; */
-    height: 50vh;
-    overflow: hidden;
+/* --------------------------Pagina "Lodge y Pesca" ------------------------------------ */
+.main_lodge_pesca {
+  background-image: radial-gradient(circle, #f5f5dc, #f5f5dc, #f5f5dc, #f5f5dc, #f5f5dc, #f0f0d9, #ececd5, #e7e7d2, #ddddcb, #d2d2c3, #c8c8bc, #bebeb5);
 }
-
-.section__Lodge__divTexto {
-    display: inline-block;
-    width: 50%;
-    height: 100%;
-    text-align: center;
-
+.main_lodge_pesca h2 {
+  font-family: "Caveat";
+  text-shadow: 1px 0px 0px white, -1px 0px 0px white, 0px 1px 0px white, 0px -1px 0px white;
 }
-
-.section__Lodge__divImg {
-    /* display: inline-block; */
-    width: 50%;
-    height: 100%;
-    /* background-image: url(../assets/img/dormitorio.jpg); */
-    /* background-size: contain; */
-    /* background-repeat: no-repeat; */
-    /* background-position: center; */
-    float: right;
+.main_lodge_pesca h3 {
+  font-family: "Caveat";
 }
-
-.section__Lodge__divImg img {
-    height: 100%;
+.main_lodge_pesca p {
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+  white-space: pre-line;
+}
+.main_lodge_pesca .boton_comentarios {
+  border: 1px solid black;
+  color: aliceblue;
+  background-color: black;
+  text-decoration: none;
+  position: relative;
+}
+@media screen and (min-width: 991px) {
+  .main_lodge_pesca .boton_comentarios::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.5s ease-in-out;
+    /* Agrega una transición de 0.5 segundos con un efecto de entrada y salida */
+  }
+  .main_lodge_pesca .boton_comentarios:hover::after {
     width: 100%;
-    object-fit: contain;
+  }
 }
 
-
-
-/* ------------------Secciones del main con el texto a la derecha de la pantalla--------------------- */
-
-
-.section__Pesca {
-    height: 50vh;
-    overflow: hidden;
+/* --------------------------Pagina "Ubicacion" ------------------------------------ */
+main {
+  background-image: radial-gradient(circle, #f5f5dc, #f5f5dc, #f5f5dc, #f5f5dc, #f5f5dc, #e6e8d1, #d8dac5, #cacdba, #abafa1, #8e9288, #737670, #595b58);
 }
-
-.section__Pesca__divImg {
-    display: inline-block;
-    width: 50%;
-    height: 50vh;
-    /* background-image: url(../assets/img/pesca.jpg); */
-    /* background-size: contain; */
-    /* background-repeat: no-repeat; */
-    /* background-position: center; */
+main section h2 { /*Titulo Main */
+  font-family: "Caveat";
+  text-shadow: 1px 0px 0px white, -1px 0px 0px white, 0px 1px 0px white, 0px -1px 0px white;
 }
-
-.section__Pesca__divImg img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
+main .p_ubicacion {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  white-space: pre-line;
 }
-
-.section__Pesca__divTexto {
-    /* display: inline-block; */
-    width: 50%;
-    height: 100%;
-    text-align: center;
-    float: right;
-    /* Use el float porque no habia forma de que no me quede el div del texto sobre el de abajo */
+main a {
+  color: rgb(63, 7, 7);
+  /*Agregar una animacion a los iconos*/
 }
-
-/* ---------------------section__Ubicacion--------------------------- */
-
-.section__Ubicacion {
-    /* display: inline-block; */
-    height: 50vh;
-    overflow: hidden;
-}
-
-.section__Ubicacion__divTexto {
-    display: inline-block;
-    width: 50%;
-    height: 100%;
-    text-align: center;
-
-}
-
-.divMap {
-    float: right;
-    height: 100%;
-    width: 50%;
-    padding: 25px;
-}
-
-.divMap__borde {
-    box-shadow: 0px 0px 28px 12px rgba(0, 0, 0, 0.86);
-    -webkit-box-shadow: 0px 0px 28px 12px rgba(0, 0, 0, 0.86);
-    -moz-box-shadow: 0px 0px 28px 12px rgba(0, 0, 0, 0.86);
-    height: 100%;
-    width: 100%;
-
-
-}
-
-/* ---------------------Seccion Video--------------------------- */
-
-.MainVideo {
-    margin: 0 auto;
-    text-align: center;
-    /* padding-top: 50px;
-    padding-bottom: 50px; */
-    height: 50vh;
-    overflow: hidden;
-}
-
-.textoVid {
-    font-size: 2rem;
-    text-shadow: 3px 0px 0px white,
-        -3px 0px 0px white,
-        0px 3px 0px white,
-        0px -3px 0px white;
-}
-
-.bordeVideo {
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-}
-
-/* ---------------------Estilos para los textos del main--------------------------- */
-
-
-.textoh3 {
-    color: black;
-    text-decoration: none;
-    font-size: 3.5rem;
-    text-shadow: 3px 0px 0px white,
-        -3px 0px 0px white,
-        0px 3px 0px white,
-        0px -3px 0px white;
-}
-
-.txtMain {
-    display: inline-block;
-    text-align: center;
-    margin: 1%;
-    font-size: 2rem;
-    width: 75%;
+main .bordes {
+  border-right: 3px solid black;
 }
 
 /* ----------------------------- Footer-------------------------------------- */
-
-.divFooter {
-    color: aliceblue;
-    font-family: 'Lato', sans-serif;
-    height: 33vh;
-    /* background-color: rgb(6, 65, 6); */
-    background-image: linear-gradient(to right top, #232022, #3a2f31, #513f3b, #635344, #6e6a50, #656c52, #5b6e57, #516f5e, #3f5950, #314440, #24302f, #191d1d);
-    position: relative;
+Footer {
+  font-family: "Lato", sans-serif;
+  border-radius: 0.25rem;
+  color: aliceblue;
+  background-image: linear-gradient(to right top, #232022, #3a2f31, #513f3b, #635344, #6e6a50, #656c52, #5b6e57, #516f5e, #3f5950, #314440, #24302f, #191d1d);
 }
-
-
-.logoFooter {
-    display: inline-block;
-    border-right: 3px solid white;
-    width: 33vw;
-    height: 100%;
+Footer .img_Logo {
+  border-radius: 35% 15%;
+  height: 17vh !important;
 }
-
-.txtFooter {
-    display: inline-block;
-    border-right: 3px solid white;
-    width: 33vw;
-    height: 100%;
-    /* text-align: center; */
-    padding: 7vh 0 0 2%;
-    position: absolute;
+Footer p {
+  text-align: center;
+  font-family: "Caveat";
+  white-space: pre-line;
 }
-
-.divIconosFooter {
-    margin-left: 18vw;
-    float: right;
-    /* Use float porque no habia forma de que no me quede el div de la <ul> debajo del efecto blur */
-    height: 100%;
+Footer a {
+  color: aliceblue;
+  text-decoration: none;
+}
+Footer .p_redes {
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+Footer .icono_trip {
+  height: 2em;
+  width: 2em;
+  vertical-align: top;
 }
 
 /* --------------------------Icono de WhatsApp fijado ------------------------------------ */
-
-
 .fixedWsp {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    z-index: 1000;
-    /*para que este por encima de todo*/
-    display: inline-block;
-    /* convertir a bloque y establecer altura/ancho iguales */
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    /* hacer que tenga bordes redondeados */
-    text-align: center;
-    /* centrar el contenido dentro del círculo */
-    line-height: 20px;
-    /* ajustar el espacio dentro del círculo */
-    font-size: 3.5rem;
-}
-
-.fa-whatsapp {
-    color: rgb(0, 5, 10);
-}
+  position: fixed;
+  bottom: 10px;
+  right: 5px;
+  z-index: 1000;
+  /*para que este por encima de todo*/
+  /* convertir a bloque y establecer altura/ancho iguales */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  /* hacer que tenga bordes redondeados */
+  text-align: center;
+  /* centrar el contenido dentro del círculo */
+  /* ajustar el espacio dentro del círculo */
+  font-size: 3rem;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,52 @@
+/* --------------------------Pagina "Lodge y Pesca" ------------------------------------ */
+
+.main_lodge_pesca {
+    background-image: $fondo_main_img;
+
+    h2 {
+        font-family: $fuente-2;
+        text-shadow: 1px 0px 0px white,
+            -1px 0px 0px white,
+            0px 1px 0px white,
+            0px -1px 0px white;
+    }
+
+    h3 {
+        font-family: $fuente-2;
+    }
+
+    p {
+        font-family: $fuente-1;
+        font-style: italic;
+        white-space: pre-line;
+    }
+
+    .boton_comentarios {
+        border: map-get($bordes, ancho1, );
+        color: aliceblue;
+        background-color: black;
+        text-decoration: none;
+        position: relative;
+
+        @media screen and (min-width: 991px) {
+
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 0;
+                height: 2px;
+                background-color: white;
+                transition: width 0.5s ease-in-out;
+                /* Agrega una transición de 0.5 segundos con un efecto de entrada y salida */
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+}

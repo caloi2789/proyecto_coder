@@ -1,0 +1,32 @@
+/* --------------------------Pagina "Ubicacion" ------------------------------------ */
+main {
+    background-image: radial-gradient(circle, #f5f5dc, #f5f5dc, #f5f5dc, #f5f5dc, #f5f5dc, #e6e8d1, #d8dac5, #cacdba, #abafa1, #8e9288, #737670, #595b58);
+
+    section {
+
+        h2 {  /*Titulo Main */
+            font-family:$fuente-2;
+            text-shadow: 1px 0px 0px white,
+            -1px 0px 0px white,
+            0px 1px 0px white,
+            0px -1px 0px white;
+        }
+
+    }
+
+    .p_ubicacion {
+        font-family: $fuente-1;
+        font-weight: 500;
+        font-style: italic;
+        white-space: pre-line;
+    }
+
+    a{
+        color: rgb(63, 7, 7);
+        /*Agregar una animacion a los iconos*/
+    }
+
+    .bordes {
+        border-right: map-get($bordes, ancho3,);
+    }
+}

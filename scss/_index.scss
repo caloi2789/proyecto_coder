@@ -1,0 +1,36 @@
+.main_Index {
+    background-color: $fondo-main;
+    font-family: $fuente-1;
+
+    section {
+        background-image: $fondo_main_img;
+    }
+
+    .section_vid {
+        background-image: radial-gradient(circle, #f5f5dc, #f5f5dc, #f5f5dc, #f5f5dc, #f5f5dc, #e6e8d1, #d8dac5, #cacdba, #abafa1, #8e9288, #737670, #595b58);
+    }
+
+    h2 {
+        text-shadow: 1px 0px 0px white,
+            -1px 0px 0px white,
+            0px 1px 0px white,
+            0px -1px 0px white;
+        text-align: center;
+        font-family: $fuente-2;
+    }
+
+    h3 {
+        font-family: $fuente-2;
+        text-align: center;
+    }
+
+    p {
+        font-family: $fuente-1;
+        font-style: italic;
+        white-space: pre-line;
+    }
+
+    .div_imagen img {
+        @include div_imagenMain (100%, cover)
+    }
+}
