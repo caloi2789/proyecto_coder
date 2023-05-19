@@ -5,7 +5,7 @@ Footer {
   border-radius: 0.25rem;
   color: aliceblue;
   background-image: linear-gradient(to right top, #232022, #3a2f31, #513f3b, #635344, #6e6a50, #656c52, #5b6e57, #516f5e, #3f5950, #314440, #24302f, #191d1d);
-  
+
   .img_Logo {
     border-radius: 35% 15%;
     height: 17vh !important;
@@ -25,14 +25,50 @@ Footer {
   .p_redes {
     font-size: 2rem;
     font-weight: 700;
-    text-decoration: underline; 
+    text-decoration: underline;
   }
 
   .icono_trip {
-    
+
     height: 2em;
     width: 2em;
     vertical-align: top;
+
+    /* ------------------------Copie el codigo de la animacion de fontawesome y la meti en un hover------------------------------- */
+    &:hover {
+      -webkit-animation-name: fa-beat;
+      animation-name: fa-beat;
+      -webkit-animation-delay: var(--fa-animation-delay, 0s);
+      animation-delay: var(--fa-animation-delay, 0s);
+      -webkit-animation-direction: var(--fa-animation-direction, normal);
+      animation-direction: var(--fa-animation-direction, normal);
+      -webkit-animation-duration: var(--fa-animation-duration, 1s);
+      animation-duration: var(--fa-animation-duration, 1s);
+      -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+      animation-timing-function: var(--fa-animation-timing, ease-in-out)
+    }
+  }
+
+  i {
+    color: white;
+
+    /* ------------------------Copie el codigo de la animacion de fontawesome y la meti en un hover------------------------------- */
+    &:hover {
+      -webkit-animation-name: fa-beat;
+      animation-name: fa-beat;
+      -webkit-animation-delay: var(--fa-animation-delay, 0s);
+      animation-delay: var(--fa-animation-delay, 0s);
+      -webkit-animation-direction: var(--fa-animation-direction, normal);
+      animation-direction: var(--fa-animation-direction, normal);
+      -webkit-animation-duration: var(--fa-animation-duration, 1s);
+      animation-duration: var(--fa-animation-duration, 1s);
+      -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+      animation-timing-function: var(--fa-animation-timing, ease-in-out)
+    }
   }
 }
 
