@@ -310,7 +310,7 @@ main .bordes {
 }
 
 .fondo_404 {
-  background-image: url(/assets/img/fondo_404.jpg);
+  background-image: url(../assets/img/fondo_404.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
