@@ -322,7 +322,7 @@ main .bordes {
   color: white;
 }
 .fondo_404 h2 {
-  font-family: "Lato", sans-serif;
+  font-family: "Caveat";
   color: white;
 }
 .fondo_404 p {
@@ -331,6 +331,47 @@ main .bordes {
   text-shadow: 1px 0px 0px rgb(10, 10, 10), -1px 0px 0px rgb(10, 10, 10), 0px 1px 0px rgb(10, 10, 10), 0px -1px 0px rgb(10, 10, 10);
   white-space: pre-line;
   font-style: italic;
+}
+.fondo_404 .boton_regresar {
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  position: relative;
+}
+@media screen and (min-width: 991px) {
+  .fondo_404 .boton_regresar::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background-color: black;
+    transition: width 0.5s ease-in-out;
+    /* Agrega una transición de 0.5 segundos con un efecto de entrada y salida */
+  }
+  .fondo_404 .boton_regresar:hover::after {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .fondo_404 h1 {
+    text-align: center;
+  }
+  .fondo_404 h2 {
+    text-align: center;
+  }
+  .fondo_404 p {
+    text-align: center;
+  }
+  .fondo_404 a {
+    display: flex;
+    justify-content: center;
+    margin-left: 33%;
+    margin-right: 33%;
+  }
 }
 
 /* ----------------------------- Footer-------------------------------------- */

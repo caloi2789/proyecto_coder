@@ -104,10 +104,12 @@
     h1 {
         font-family: $fuente-2;
         color: white;
+
+
     }
 
     h2 {
-        font-family: $fuente-1;
+        font-family: $fuente-2;
         color: white;
     }
 
@@ -120,5 +122,55 @@
             0px -1px 0px rgb(10, 10, 10);
         white-space: pre-line;
         font-style: italic;
+    }
+
+    .boton_regresar {
+        color: black;
+        background-color: white;
+        text-decoration: none;
+        position: relative;
+
+        @media screen and (min-width: 991px) {
+
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: 5px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 0;
+                height: 3px;
+                background-color: black;
+                transition: width 0.5s ease-in-out;
+                /* Agrega una transición de 0.5 segundos con un efecto de entrada y salida */
+            }
+
+            &:hover::after {
+                width: 90%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+            margin-left: 33%;
+            margin-right: 33%;
+        }
     }
 }
