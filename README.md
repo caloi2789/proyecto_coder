@@ -1,3 +1,3 @@
-Curso de Desarrollo web CODERHOUSE
-Proyecyo:
-"Epecuen Lodge"
+#Curso de Desarrollo web CODERHOUSE
+
+Proyecto: "Epecuen Lodge"
